@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div id="DayLan-div" class="jumbotron text-center">
+                <h2> DayLan: My Daily Plan</h2>
+                <p>Make your notes, do tasks and achive goals !</p>
+                <div class="container">
+                    <h3>Let's start !</h3>
+                    <br>
+                    <div ng-hide="isAuthenticated">
+                        <a ui-sref="login" class="btn btn-info" role="button">Log in</a>
+                        <a ui-sref="registration" class="btn btn-info" role="button">Register account</a>
+                    </div>
+
+                    <div ng-show="isAuthenticated">
+                        <a ui-sref="home.myProfile" class="btn btn-info" role="button">You are logged in, click to see your Profile</a>
+                    </div>
+                    <div </div>
+                    </div>
+                    <div id="about" class="containter text-center">
+                        <br>
+                        <h4>What is the DayLan?</h4>
+                        <h5>DayLan is a web application that will help you to manage your daily taks, plan and track your goals.
+                        </h5>
+                        <h5>With our application you will be able to achive your goals more effectively and you will do all your
+                            todos everyday!</h5>
+                        <h5>With DayLan, we also provide feature for adding you own notes, just try it out. </h5>
+                    </div>
+                    <hr>
+                    <footer id="my-footer" class="my-footer-first-page">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                                    <h5>DayLan &copy; Patryk Głowienko</h5>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TODO: KOŁKA Z OBRAZKAMI I PODPISAMI CO NA STRONIE JEST : 4 KÓŁKA - TASKS, NOTES, GOALS, SUCCESS NP :D  -->

@@ -1,0 +1,87 @@
+body { 
+    padding-top: 40px;
+    background-color:#f7f7f7;
+    height: 100%;
+    }
+.jumbotron {
+    background-color: #59ff74;
+    }
+.jumbotron h1 {
+    font-weight: 700;
+}
+
+#my-content{
+    background-color: #59ff74;
+    height: 500px;
+}
+.my-footer-div {
+
+    padding-top:100px;
+
+    }
+
+.my-footer {
+    font-size: 14px;
+    font-weight: 800;
+    background-color: black;
+    }
+
+.my-footer-first-page { 
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.subpage-content-div {
+        padding-top:20px;
+        padding-bottom: 100px;  
+    }
+ .progress-bar {
+        background-color: yellowgreen;
+        font-size: 15px;
+        padding-top: 5px;
+        font-weight: 700;
+    }
+    .progress {
+        height: 30px;   
+    }
+
+.nav.navbar-nav li {
+        font-weight: 700;
+ }
+.navbar-header a {
+    font-weight: 700;
+    }
+   
+ul > li {
+    cursor: pointer;
+    padding: 3px 10px 3px 10px;
+}
+
+.profileOverview {
+    cursor: pointer;
+    background-color: #eaeff7;
+    padding: 25px;
+    border-radius: 25px;
+    border: 3px solid #c4c8ce;
+    font-size: medium;
+    font-weight:700;
+}
+
+.profileDetailsElement {
+     background-color: #b7d1ff;
+    padding: 25px;
+    border-radius: 25px;
+    border: 3px solid #c4c8ce;
+    font-size: medium;
+    font-weight:700;
+}
+
+.profileDetailsFirstElement {
+    background-color: #b7d1ff;
+    padding: 25px;
+    border-radius: 25px;
+    border: 3px solid #c9ddff;
+    font-weight:700;
+    font-size: larger;
+
+}

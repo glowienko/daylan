@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 home-content">
+            <div class="jumbotron text-center">
+                <h1>Tasks</h1>
+            </div>
+            <button type="button" class="btn btn-primary" ng-click="addTask()">Add task</button>
+            <br>
+            <div ng-show="isAnyTask()" class="table-responsive table-striped subpage-content-div">
+                <table class="table table-hover">
+
+                    {{info}}
+                    <thead>
+                        <tr>
+                            <th>Task name</th>
+                            <th>Deadline</th>
+                            <th>Importance</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="task in tasks">
+
+                            <td>{{task.body}}</td>
+                            <td>{{task.time | date : 'H:mm'}} {{task.date | date: 'd, MMMM yyyy' }} </td>
+                            <td>{{task.importance}}</td>
+                            <td>
+                                <button type="button" class="btn btn-success" ng-click="finishTask(task)">Done!</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger" ng-click="deleteTask(task, false)">Delete me</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-xs-1 col-xs-1 col-xs-1 col-xs-1">
+        </div>
+    </div>
+</div>

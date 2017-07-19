@@ -1,0 +1,12 @@
+{
+	"name": "angular",
+	"version": "1.0.0",
+	"dependencies": {
+		"bootstrap": "latest",
+		"angular": "latest",
+		"angular-ui-router": "latest",
+		"angular-jwt": "latest",
+		"angular-modal-service": "latest",
+		"angular-animate": "latest"
+	}
+}

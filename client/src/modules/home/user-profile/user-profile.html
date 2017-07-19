@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div class="jumbotron text-center">
+                <h1> Hi {{userProfile.owner}} ! </h1>
+            </div>
+            <h3>My Statistics:</h3>
+            <hr>
+        </div>
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+    </div>
+    <div class="row subpage-content-div">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <div>
+                <h4>Level: <span class="level-badge">{{userProfile.level}}</span> </h4>
+                <h4>Points:<span class="points-badge">{{userProfile.points}}</span> </h4>
+            </div>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <h4>You achived : {{userProfile.goalsAchivedCounter}} goals</h4>
+            <h4>You did: {{userProfile.tasksDoneCounter}} tasks</h4>
+        </div>
+    </div>
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+    </div>
+</div>

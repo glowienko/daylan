@@ -1,0 +1,35 @@
+<div class="container">
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a ng-show="isRegularUser()" class="navbar-brand" ui-sref="home.myProfile">MyProfile</a>
+			<a ng-hide="isRegularUser()" class="navbar-brand" ui-sref="home.profilesOverview">Active users overview</a>
+		</div>
+		<ul ng-show="isRegularUser()" class="nav navbar-nav">
+			<li><a ui-sref="home.tasks">Tasks</a></li>
+			<li><a ui-sref="home.notes">Notes</a></li>
+			<li><a ui-sref="home.goals">Goals</a></li>
+		</ul>
+		<ul ng-hide="isRegularUser()" class="nav navbar-nav">
+			<li><a ui-sref="home.tasks" ng-click="goPro()">Become regular user! </a></li>	
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li ng-show="isRegularUser()"><a ui-sref="home.myProfile">Level: {{level}} <span class="glyphicon glyphicon-fire"></span></a></li>
+			<li ng-show="isRegularUser()"><a ui-sref="home.myProfile">Score: {{points}} <span class="glyphicon glyphicon-usd" ></span></a></li>
+			<li ng-show="isAuthenticated"><a ui-sref="firstPage" ng-click="logOut()">Log out  <span class="glyphicon glyphicon-log-out"></span></a></li>
+		</ul>
+	</nav>
+	<ui-view></ui-view>
+</div>
+<footer class="navbar-fixed-bottom my-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+				<h5>DayLan &copy; Patryk Głowienko</h5>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			</div>
+		</div>
+	</div>
+</footer>

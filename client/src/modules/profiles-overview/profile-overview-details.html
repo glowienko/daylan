@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 home-content">
+            <div class="jumbotron text-center">
+                <h2>User details:</h2>
+            </div>
+            <hr>
+            <div class="profileDetailsFirstElement">
+                <p>User: <span class="level-badge">{{userProfile.owner}}</span> </p>
+                <p>Level: <span class="level-badge">{{userProfile.level}}</span> </p>
+                <p>Points: <span class="level-badge">{{userProfile.points}}</span> </p>
+                <br>
+                <p>Goals done by user: <span class="level-badge">{{userProfile.goalsAchivedCounter}}</span> </p>
+                <p>Tasks done by user: <span class="level-badge">{{userProfile.tasksDoneCounter}}</span> </p>
+            </div>
+            <hr>
+
+            <div class="profileDetailsElement subpage-content-div">
+                <h3>User goals:</h3>
+                <div ng-repeat="goal in userProfile.userGoals">
+                    <h4>Goal: {{goal.body}}</h4>
+                    <p>Progress: {{goal.progress}}</p>
+                    <hr>
+                </div>
+            </div>
+            <hr>
+            <div class="profileDetailsElement subpage-content-div">
+                <h3>User tasks:</h3>
+                <div ng-repeat="task in userProfile.userTasks">
+                    <p>Task: {{task.body}}</p>
+                    <p>Importance: {{task.importance}}</p>
+                    <hr>
+                </div>
+            </div>
+            <hr>
+            <div class="profileDetailsElement subpage-content-div">
+                <h3>User notes:</h3>
+                <div ng-repeat="note in userProfile.userNotes">
+                    <h4>{{note.title}}</h4>
+                    <p>{{note.body}}</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="subpage-content-div">
+                <button type="button" class="btn btn-lg" ng-click="goBack()">Back</button>
+            </div>
+            <div class="col-xs-1 col-xs-1 col-xs-1 col-xs-1">
+            </div>
+        </div>
+    </div>

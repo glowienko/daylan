@@ -1,0 +1,26 @@
+<div class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Create new goal</h4>
+            </div>
+            <div class="modal-body">
+                <p>Fill goal information and click submit to add it</p>
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="goalName" class="col-sm-2 control-label">Goal name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="goalName" placeholder="Type what would you do in this goal" required ng-model="newGoal.body">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" ng-click="close()" class="btn btn-primary" data-dismiss="modal">Create</button>
+                <button type="button" ng-click="cancel()" class="btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

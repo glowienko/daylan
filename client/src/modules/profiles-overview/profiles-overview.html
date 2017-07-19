@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 subpage-content-div">
+            <div class="jumbotron text-center">
+                <h1>Active users achivements</h1>
+                <h3>Register your full account and compete with them!</h3>
+            </div>
+            <br>
+            <h2> Click on one to see more ! </h2>
+            <div ng-repeat="userProfile in profiles">
+                <div class="subpage-content-div profileOverview" ng-click="seeDetails(userProfile)">
+                    <p>User: {{userProfile.owner}}</p>
+                    <p>Level: <span class="level-badge">{{userProfile.level}}</span> </p>
+                    <p>Points: <span class="points-badge">{{userProfile.points}}</span> </p>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <div class="col-xs-1 col-xs-1 col-xs-1 col-xs-1">
+        </div>
+    </div>
+</div>

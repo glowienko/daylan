@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+    </div>
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        <div class="jumbotron text-center">
+            <h3>Register your account and try DayLan!</h3>
+            <br><br>
+            <hr>
+            <form class="form-horizontal">
+                <div class="form--group row">
+                    <div class="alert alert-danger col-md-4" ng-hide="isLoginAvailable">
+                        <label class="close" data-dismiss="alert" aria-label="close" ng-click="closeAlert()">&times;</label>
+                        <strong>Cannot register!</strong> User with this login already exist.
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="login" class="control-label col-sm-2">Name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Your name" required ng-model="newUser.name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="login" class="control-label col-sm-2">E-mail:</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" placeholder="Your e-mail" required ng-model="newUser.email">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label for="login" class="control-label col-sm-2">Nick:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Your login" required ng-model="newUser.username">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="password" class="col-sm-2 control-label control-label">Password:</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" placeholder="Your password" required ng-model="newUser.password">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-8">
+                        <label class="radio-inline"><input type="radio" name="optradio" ng-model="newUser.type" value="regular" checked required/>Regular user, full account access</label>
+                        <label class="radio-inline"><input type="radio" name="optradio"ng-model="newUser.type" value="viewer" required/>Viwer, can only see others achivements and notes</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-5">
+                        <button type="submit" class="btn btn-primary" ng-click="registerUser(newUser)" ng-disabled="!isFormValid()">Sign up</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </form>
+</div>
+</div>
+<div class="col-xs-1 col-xs-1 col-xs-1 col-xs-1">
+</div>
+</div>

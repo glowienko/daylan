@@ -1,0 +1,17 @@
+bob , bob
+
+
+
+    { "goalsAchivedCounter": "0", "tasksDoneCounter": "0",
+ "userTasks": [ 
+{ "body":"learn 2 hour","time": "2016-10-22", "importance": "3" }, 
+
+{ "body":"do homework", "time": "2016-10-22", "importance": "5" } ], 
+
+
+"userGoals": [ { "body": "be fit" }, { "body":
+    "have good grades" } ],
+
+
+ "userNotes": [ { "body": "This is my test note, nearly like a blog", "title":"First Note ever
+    !" }, { "body": "This is my second note, nearly like a blog", "title":"Second Note !" } ] }

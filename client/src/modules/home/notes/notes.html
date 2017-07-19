@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 home-content">
+            <div class="jumbotron text-center">
+                <h1>Notes</h1>
+            </div>
+            <button type="button" class="btn btn-primary" ng-click="addNote()">Add note</button>
+            <br>
+            <div class="subpage-content-div" ng-show="isAnyNote()">
+                <div class="single-note-div" ng-repeat="note in notes">
+                    <h3>{{note.title}}</h3>
+                    <h4>Author: {{userProfile.owner}}</h4>
+                    <p>{{note.body}}</p>
+                    <button type="button" class="btn btn-danger" ng-click="deleteNote(note)">Delete me</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1 col-xs-1 col-xs-1 col-xs-1">
+        </div>
+    </div>
+</div>

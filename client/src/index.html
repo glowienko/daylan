@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DayLan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div ng-app="daylan">
+        <ui-view></ui-view>
+    </div>
+    <!-- bower_components -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-jwt/dist/angular-jwt.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-modal-service/dst/angular-modal-service.js"></script>
+    <!-- ANGULAR FILES-->
+
+    <!-- index & routes & authentication -->
+    <script src="index.js"></script>
+    <script src="app-config/routes.js"></script>
+    <script src="app-config/app-run.js"></script>
+    <script src="app-config/auth-config.js"></script>
+
+    <!-- modules -->
+    <script src="modules/home/goals/goals-module.js"></script>
+    <script src="modules/home/tasks/tasks-module.js"></script>
+    <script src="modules/home/notes/notes-module.js"></script>
+    <script src="modules/home/user-profile/user-profile-module.js"></script>
+    <script src="modules/home-module.js"></script>
+    <script src="modules/authorization-module.js"></script>
+    <script src="modules/login-module.js"></script>
+    <script src="modules/registration-module.js"></script>
+    <script src="modules/profiles-overview-module.js"></script
+
+    <!-- services -->
+    <script src="modules/auth/authorization-service.js"></script>
+    <script src="modules/home/user-profile/user-profile-service.js"></script>
+    <script src="modules/home/user-profile/award-service.js"></script>
+    <script src="modules/home/tasks/tasks-service.js"></script>
+    <script src="modules/home/notes/notes-service.js"></script>
+    <script src="modules/home/goals/goals-service.js"></script>
+    <script src="modules/profiles-overview/profiles-overview-service.js"></script>
+
+    <!-- controllers -->
+    <script src="modules/home/user-profile/user-profile-controller.js"></script>
+    <script src="modules/home/goals/goals-controller.js"></script>
+    <script src="modules/home/notes/notes-controller.js"></script>
+    <script src="modules/home/tasks/tasks-controller.js"></script>
+    <script src="modules/home/home-controller.js"></script>
+    <script src="modules/login/login-controller.js"></script>
+    <script src="modules/registration/registration-controller.js"></script>
+    <script src="modules/profiles-overview/profiles-overview-controller.js"></script>
+    <script src="modules/profiles-overview/profile-overview-details-controller.js"></script>
+    <script src="modules/home/tasks/add-task-modal/add-task-modal-controller.js"></script>
+    <script src="modules/home/notes/add-note-modal/add-note-modal-controller.js"></script>
+    <script src="modules/home/goals/add-goal-modal/add-goal-modal-controller.js"></script>
+
+</body>
+
+</html>
